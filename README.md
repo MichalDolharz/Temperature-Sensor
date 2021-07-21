@@ -21,4 +21,4 @@ Connections:
   * MOSI – 11
   * CS – 9
 
-  RTC library used: [RTC Virtuabotix Library by chrisfryer78](https://github.com/chrisfryer78/ArduinoRTClibrary)
+RTC library used: [RTC Virtuabotix Library by chrisfryer78](https://github.com/chrisfryer78/ArduinoRTClibrary)
