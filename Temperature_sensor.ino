@@ -3,10 +3,13 @@
 #include <SD.h>
 
 #define LM35 A4 
+#define RTC_RST 6 // CS
+#define RTC_DAT 7 // MISO
+#define RTC_CLK 8 // SCK
 #define interval 1UL // minutes (UL is needed for compiler to make it unsigned long type)
 
 File SDCardFile; // a file into which data will be written 
-virtuabotixRTC RTC(6, 7, 8); // a RTC 
+virtuabotixRTC RTC(RTC_RST, RTC_DAT, RTC_CLK); // a RTC 
 unsigned long timestamp = 0; // a variable to set a timestamp to measure a time between temperature measuments
 unsigned long timeNow; // a variable to measure a current time
 int fileNum = 0;
